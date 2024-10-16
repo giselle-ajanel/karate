@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Karate</title>
+
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgb(123, 140, 238);
+        }
+
+        /* div {
+            margin-left: auto;
+            margin-right: auto;
+            
+        } */
+
+        h1 {
+            margin: 0px;
+        }
+
+        #header {
+            /* background image is to get the link address! */
+            background-image: url("https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/j1sfphb9tbebb5zc7vap");
+            background-size: cover;
+            background-position: center;
+            height: 725px;
+            /* color: coral; */
+
+            color: #FFF;
+            font-size: 2.6em;
+            text-align: center;
+            line-height: 600px;
+
+
+            /* text-shadow: 0px 0px 15px #000; */
+        }
+
+        #sidebar {
+            width: 250px;
+            /* put the width of the sidebar, might be changing to fit the other images */
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+            padding: 15px;
+
+            background-color: rgb(237, 204, 245);
+        }
+
+        #main {
+            display: flex;
+            justify-content: center;
+            /* background-color: rgb(203, 164, 240); */
+            width: 1100px;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #wide_container {
+
+            background-color: rgb(230, 212, 247);
+            width: 600px;
+            /* margin: 30px; */
+            border-left: 1px solid #000;
+            padding: 15px;
+        }
+
+        #gallery {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        #footer {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: rgb(230, 212, 247);
+        }
+
+        #nav {
+            /* box-shadow: 0px 2px 5px #CCC; */
+            display: flex;
+            justify-content: center;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: rgb(19, 1, 1);
+            /* background-color: gold;
+			border: 1px solid #900; */
+
+            /* 
+				size of main + size of sidebar
+				600px main + 30px main padding 
+				+ 150px sidebar + 30px sidebar padding 
+				= 810px 
+			
+				size of page-wrapper / # of nav items
+				810px / 5  = 162px per nav item
+			*/
+            width: 162px;
+            height: 50px;
+
+            display: block;
+            text-align: center;
+            line-height: 50px;
+
+            border-bottom: 2px solid #FFF;
+            /*  */
+        }
+
+        #nav a:hover {
+            border-bottom: 2px solid rgb(207, 137, 240);
+            color: rgb(174, 234, 245);
+        }
+
+        .origins {
+            float: right;
+            width: 400px;
+            padding: 15px;
+        }
+
+        .fater {
+            float: right;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .kata {
+            float: right;
+            width: 350px;
+            padding: 10px;
+        }
+
+        .kumite {
+            float: left;
+            width: 350px;
+            padding: 10px;
+        }
+
+        .thumbnail {
+            width: 250px;
+            height: auto;
+            border: 1px solid #000;
+
+        }
+
+        /* starting from lecture 2 that helps with this assignment */
+        .thumbnail+p {
+            text-align: center;
+            /* display: none; */
+            visibility: hidden;
+        }
+
+        .img-container:hover p {
+            /* display: block; */
+            visibility: visible;
+        }
+
+        .thumbnail {
+            opacity: 0.5;
+        }
+
+        .img-container:hover .thumbnail {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Karate</h1>
+    </div>
+
+    <div id="nav">
+        <a href="assignment02.html"><strong>Home</strong></a>
+        <a href="assignment02.html#origins"><strong>Origins</strong></a>
+        <a href="#father-karate"><strong>Founder</strong></a>
+        <a href="#practice-karate"><strong>Practices</strong></a>
+        <a href="#image-galleryy"><strong>Gallery</strong></a>
+    </div>
+
+
+
+    <div id="main">
+        <div id="wide_container">
+
+            <img class="origins" src="img/origins.jpg" alt="Origins">
+            <h2 id="origins">Origins of Karate</h2> <!-- for NAV -->
+            <p>
+                Karate, unarmed martial-arts discipline employing kicking, striking, and defensive blocking with arms
+                and legs. Emphasis is
+                on concentrating as much of the body’s power as possible at the point and instant of impact. Striking
+                surfaces include the
+                hands (particularly the knuckles and the outer edge), ball of the foot, heel, forearm, knee, and elbow.
+                All are toughened by
+                practice blows against padded surfaces or wood. Pine boards up to several inches in thickness can be
+                broken by the bare hand
+                or foot of an expert. Timing, tactics, and spirit, however, are each considered at least as important as
+                physical toughening.
+            </p>
+
+            <p>
+                The exact history of karate as we know it is unknown, but it is believed that the roots of it date back
+                thousands of years.
+                Okinawa, Japan, is regarded as the home and birthplace of karate, though it was influenced by Chinese
+                martial arts. The
+                Chinese Shao Lin fighting art developed from training methods used at the Shao Lin monastery, which were
+                designed to build
+                endurance and strength and to uphold a disciplined life encouraged by Buddhism. Shao Lin spread to
+                neighboring Okinawa, Japan,
+                where it blended with the Okinawan style of "empty-hand" fighting.
+            </p>
+
+            <p>
+                In sporting karate and sparring (kumite) in training, blows and kicks are stopped short, preferably
+                within an inch of contact.
+                Sporting matches commonly last about three minutes, to a decision, if neither contestant has scored a
+                clean “killing” point in
+                the estimation of the judges. Contests of form (kata) are also held, in which single competitors perform
+                predetermined series
+                of movements simulating defense and counterattack against several opponents. Performances are scored by
+                a panel of judges, as in
+                gymnastics.
+            </p>
+
+
+            <img class="fater" src="img/fater.jpg" alt="Fater">
+            <h2 id="father-karate">Father of Karate</h2>
+            <p>
+                Born in Okinawa in 1868, Funakoshi Gichin started practicing karate as a child and ultimately became a
+                karate instructor. When
+                the Japanese Ministry of Education held a martial arts demonstration in Tokyo in 1922, Funakoshi was
+                asked to help bring karate
+                to the national level. He ultimately opened a small dojo in Tokyo in a university lecture hall and made
+                karate more accessible
+                to the wider population, streamlining the components of training to cater to all ages.Considered the
+                father of modern karate, he
+                is also credited with developing a new style of karate, Shotokan, that is still practiced today. He
+                pushed karate from a system of
+                fighting to become both a sport and an art, one that emphasized improving a person's character through
+                vigorous training and
+                discipline. His supporters pooled enough money to open the first free-standing dojo in Japan in 1936.
+            </p>
+
+            <p>
+                In 1933, karate was officially recognized as a Japanese martial art by the Dai Nippon Butoku Kai, but
+                initially belonged to the
+                jujutsu division and title examinations were conducted by jujutsu masters. In 1935, Funakoshi changed
+                the names of many kata and
+                karate itself. Funakoshi's motivation was that the names of many of the traditional kata were
+                unintelligible, and that it would be
+                inappropriate to use the Chinese style names to teach karate as a Japanese martial art. He also said
+                that the kata had to be
+                simplified to spread karate as a form of physical education, so some of the kata were modified.x He
+                always referred to what he
+                taught as simply karate, but in 1936 he built a dōjō in Tokyo and the style he left behind is usually
+                called Shotokan after this
+                dōjō. Shoto, meaning "pine wave", was Funakoshi's pen name and kan meaning "hall".
+            </p>
+
+
+            <h2 id="practice-karate">Practice</h2>
+            <p>
+                Karate can be practiced as an art (budō), self defense or as a combat sport. Traditional karate places
+                emphasis on self-development
+                (budō). Modern Japanese style training emphasizes the psychological elements incorporated into a proper
+                kokoro (attitude) such as
+                perseverance, fearlessness, virtue, and leadership skills. Sport karate places emphasis on exercise and
+                competition. Weapons are an
+                mportant training activity in some styles of karate. Karate training is commonly divided into kihon
+                (basics or fundamentals), kata
+                (forms), and kumite (sparring).
+            </p>
+
+            <img class="kata" src="img/kata.jpg" alt="Kata">
+            <p>
+                Kihon means basics and these form the base for everything else in the style including stances, strikes,
+                punches, kicks and blocks.
+                Karate styles place varying importance on kihon. Typically this is training in unison of a technique or
+                a combination of techniques
+                by a group of karateka. Kihon may also be prearranged drills in smaller groups or in pairs.
+            </p>
+
+            <p>
+                Kata (型:かた) means literally "shape" or "model." Kata is a formalized sequence of movements which
+                represent various offensive and
+                defensive postures. These postures are based on idealized combat applications. The applications when
+                applied in a demonstration with
+                real opponents is referred to as a Bunkai. The Bunkai shows how every stance and movement is used.
+                Bunkai is a useful tool to understand
+                a kata. To attain a formal rank the karateka must demonstrate competent performance of specific required
+                kata for that level. The
+                Japanese terminology for grades or ranks is commonly used. Requirements for examinations vary among
+                schools.
+            </p>
+
+            <img class="kumite" src="img/kumite.jpg" alt="Kumite">
+            <p>
+                Sparring in Karate is called kumite (組手:くみて). It literally means "meeting of hands." Kumite is practiced
+                both as a sport and as
+                self-defense training. Levels of physical contact during sparring vary considerably. Full contact karate
+                has several variants.
+                Knockdown karate (such as Kyokushin) uses full power techniques to bring an opponent to the ground.
+                Sparring in armour, bogu kumite,
+                allows full power techniques with some safety. Sport kumite in many international competition under the
+                World Karate Federation is free
+                or structured with light contact or semi contact and points are awarded by a referee. In structured
+                kumite (yakusoku, prearranged), two
+                participants perform a choreographed series of techniques with one striking while the other blocks. The
+                form ends with one devastating
+                technique (hito tsuki). In free sparring (Jiyu Kumite), the two participants have a free choice of
+                scoring techniques. The allowed
+                techniques and contact level are primarily determined by sport or style organization policy, but might
+                be modified according to the age,
+                rank and sex of the participants. Depending upon style, take-downs, sweeps and in some rare cases even
+                time-limited grappling on the ground
+                are also allowed. Free sparring is performed in a marked or closed area. The bout runs for a fixed time
+                (2 to 3 minutes.) The time can run
+                continuously (iri kume) or be stopped for referee judgment. In light contact or semi contact kumite,
+                points are awarded based on the criteria:
+                good form, sporting attitude, vigorous application, awareness/zanshin, good timing and correct distance.
+                In full contact karate kumite, points
+                are based on the results of the impact, rather than the formal appearance of the scoring technique.
+            </p>
+        </div>
+
+        <div id="sidebar">
+            <h2 id="image-galleryy">Image Gallery</h2>
+
+            <div id="gallery">
+                <div class="img-container">
+                    <img class="thumbnail" src="img/dojo.jpg" alt="Karate Dojo">
+                    <p>Karate Dojo</p>
+                </div> <!-- .img-container -->
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img/belts.jpg" alt="Belts">
+                    <p>Belts in Karate</p>
+                </div> <!-- .img-container -->
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img/wfk.jpg" alt="WKF">
+                    <p>WKF Tournament</p>
+                </div> <!-- .img-container -->
+
+            </div> <!-- #gallery -->
+
+        </div> <!-- #sidebar -->
+
+    </div> <!-- #main -->
+
+    <div id="footer">
+        Giselle Ajanel &copy; 2024
+    </div> <!-- #footer -->
+
+    
+
+</body>
+
+
+</html>
+
+
+<!-- .img-container > img {}
+width 100%,
+height: auto; 
+ -->
